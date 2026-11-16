@@ -1,0 +1,172 @@
+case_id,image,quyet_dinh,quy_tac_ghi_vao_guideline,phien_ban_guideline,nguoi_chot,phieu_sua,kiem_lai,pham_vi
+C001,img_001.jpg,Chốt biên box person ôm sát toàn bộ phần nhìn thấy (IoU cũ=0.82),R-01,v1.1,036,Chuẩn hóa tọa độ box person trên img_001.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C002,img_001.jpg,Chốt biên box truck ôm sát toàn bộ phần nhìn thấy (IoU cũ=0.82),R-01,v1.1,036,Chuẩn hóa tọa độ box truck trên img_001.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C003,img_001.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_001.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C004,img_001.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_001.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C005,img_002.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box car trên img_002.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C006,img_003.jpg,"Xác nhận đối tượng motorcycle thật >=20px do 002 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box motorcycle hợp lệ trên img_003.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C007,img_003.jpg,"Xác nhận đối tượng motorcycle thật >=20px do 002 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box motorcycle hợp lệ trên img_003.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C008,img_003.jpg,"Xác nhận đối tượng person thật >=20px do 002 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_003.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C009,img_003.jpg,"Xác nhận đối tượng person thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_003.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C010,img_003.jpg,"Xác nhận đối tượng motorcycle thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box motorcycle hợp lệ trên img_003.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C011,img_003.jpg,"Xác nhận đối tượng motorcycle thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box motorcycle hợp lệ trên img_003.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C012,img_003.jpg,"Xác nhận đối tượng motorcycle thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box motorcycle hợp lệ trên img_003.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C013,img_003.jpg,"Xác nhận box car ở hậu cảnh cao >=20px là đối tượng thật, tắt cờ can_review",R-06,v1.1,036,Chốt giữ box car và đặt can_review=false trên img_003.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C014,img_003.jpg,Chốt biên box motorcycle ôm sát toàn bộ phần nhìn thấy (IoU cũ=0.81),R-01,v1.1,036,Chuẩn hóa tọa độ box motorcycle trên img_003.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C015,img_003.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_003.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C016,img_003.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_003.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C017,img_003.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box car trên img_003.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C018,img_003.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_003.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C019,img_003.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_003.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C020,img_003.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box motorcycle trên img_003.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C021,img_003.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box motorcycle trên img_003.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C022,img_004.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_004.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C023,img_005.jpg,"Xác nhận đối tượng person thật >=20px do 002 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_005.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C024,img_005.jpg,"Xác nhận đối tượng motorcycle thật >=20px do 002 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box motorcycle hợp lệ trên img_005.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C025,img_005.jpg,"Xác nhận đối tượng person thật >=20px do 002 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_005.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C026,img_005.jpg,"Xác nhận đối tượng person thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_005.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C027,img_005.jpg,"Xác nhận đối tượng person thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_005.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C028,img_005.jpg,"Xác nhận đối tượng person thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_005.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C029,img_005.jpg,"Xác nhận đối tượng motorcycle thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box motorcycle hợp lệ trên img_005.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C030,img_005.jpg,Chốt biên box person ôm sát toàn bộ phần nhìn thấy (IoU cũ=0.81),R-01,v1.1,036,Chuẩn hóa tọa độ box person trên img_005.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C031,img_005.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0; truncated: 002=yes vs 036=no) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_005.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C032,img_005.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0; truncated: 002=yes vs 036=no) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box van trên img_005.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C033,img_005.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1; truncated: 002=yes vs 036=no) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box car trên img_005.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C034,img_005.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box motorcycle trên img_005.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C035,img_005.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0; truncated: 002=yes vs 036=no) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_005.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C036,img_006.jpg,"Xác nhận đối tượng person thật >=20px do 002 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_006.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C037,img_006.jpg,"Xác nhận đối tượng person thật >=20px do 002 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_006.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C038,img_006.jpg,"Xác nhận đối tượng person thật >=20px do 002 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_006.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C039,img_006.jpg,"Xác nhận đối tượng car thật >=20px do 002 gán, bổ sung vào bản chung",R-01,v1.1,036,Giữ box car hợp lệ trên img_006.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C040,img_006.jpg,"Xác nhận đối tượng person thật >=20px do 002 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_006.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C041,img_006.jpg,"Xác nhận đối tượng person thật >=20px do 002 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_006.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C042,img_006.jpg,"Xác nhận đối tượng person thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_006.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C043,img_006.jpg,"Xác nhận đối tượng motorcycle thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box motorcycle hợp lệ trên img_006.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C044,img_006.jpg,Chốt biên box person ôm sát toàn bộ phần nhìn thấy (IoU cũ=0.85),R-01,v1.1,036,Chuẩn hóa tọa độ box person trên img_006.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C045,img_006.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box motorcycle trên img_006.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C046,img_006.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_006.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C047,img_006.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_006.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C048,img_006.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box motorcycle trên img_006.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C049,img_006.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_006.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C050,img_006.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box motorcycle trên img_006.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C051,img_007.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box truck trên img_007.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C052,img_008.jpg,"Xác nhận đối tượng motorcycle thật >=20px do 002 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box motorcycle hợp lệ trên img_008.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C053,img_008.jpg,"Xác nhận đối tượng motorcycle thật >=20px do 002 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box motorcycle hợp lệ trên img_008.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C054,img_008.jpg,"Xác nhận đối tượng person thật >=20px do 002 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_008.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C055,img_008.jpg,"Xác nhận đối tượng motorcycle thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box motorcycle hợp lệ trên img_008.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C056,img_008.jpg,"Xác nhận đối tượng person thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_008.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C057,img_008.jpg,"Xác nhận đối tượng person thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_008.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C058,img_008.jpg,"Xác nhận đối tượng truck thật >=20px do 036 gán, bổ sung vào bản chung",R-01,v1.1,036,Giữ box truck hợp lệ trên img_008.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C059,img_008.jpg,"Xác nhận đối tượng truck thật >=20px do 036 gán, bổ sung vào bản chung",R-01,v1.1,036,Giữ box truck hợp lệ trên img_008.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C060,img_008.jpg,"Xác nhận đối tượng motorcycle thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box motorcycle hợp lệ trên img_008.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C061,img_008.jpg,Chốt biên box person ôm sát toàn bộ phần nhìn thấy (IoU cũ=0.77),R-01,v1.1,036,Chuẩn hóa tọa độ box person trên img_008.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C062,img_008.jpg,Chốt biên box motorcycle ôm sát toàn bộ phần nhìn thấy (IoU cũ=0.75),R-01,v1.1,036,Chuẩn hóa tọa độ box motorcycle trên img_008.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C063,img_008.jpg,Chốt biên box motorcycle ôm sát toàn bộ phần nhìn thấy (IoU cũ=0.60),R-01,v1.1,036,Chuẩn hóa tọa độ box motorcycle trên img_008.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C064,img_008.jpg,Chốt biên box motorcycle ôm sát toàn bộ phần nhìn thấy (IoU cũ=0.53),R-01,v1.1,036,Chuẩn hóa tọa độ box motorcycle trên img_008.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C065,img_008.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_008.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C066,img_008.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box motorcycle trên img_008.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C067,img_008.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box motorcycle trên img_008.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C068,img_008.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_008.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C069,img_008.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box motorcycle trên img_008.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C070,img_008.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_008.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C071,img_008.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_008.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C072,img_008.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_008.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C073,img_008.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box motorcycle trên img_008.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C074,img_009.jpg,Giữ vùng ignore_region bao cụm đối tượng nhỏ/chồng lấn ở xa theo ngưỡng <20px,R-06,v1.1,036,Đồng bộ vùng ignore_region trên img_009.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C075,img_009.jpg,"Xác nhận đối tượng motorcycle thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box motorcycle hợp lệ trên img_009.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C076,img_009.jpg,"Xác nhận đối tượng person thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_009.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C077,img_009.jpg,Chốt biên box motorcycle ôm sát toàn bộ phần nhìn thấy (IoU cũ=0.79),R-01,v1.1,036,Chuẩn hóa tọa độ box motorcycle trên img_009.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C078,img_009.jpg,Chốt biên box motorcycle ôm sát toàn bộ phần nhìn thấy (IoU cũ=0.61),R-01,v1.1,036,Chuẩn hóa tọa độ box motorcycle trên img_009.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C079,img_009.jpg,Chốt biên box person ôm sát toàn bộ phần nhìn thấy (IoU cũ=0.55),R-01,v1.1,036,Chuẩn hóa tọa độ box person trên img_009.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C080,img_009.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box motorcycle trên img_009.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C081,img_009.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box motorcycle trên img_009.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C082,img_010.jpg,"Xác nhận đối tượng person thật >=20px do 002 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_010.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C083,img_010.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box motorcycle trên img_010.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C084,img_010.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box motorcycle trên img_010.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C085,img_010.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box motorcycle trên img_010.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C086,img_010.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_010.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C087,img_011.jpg,Giữ vùng ignore_region bao cụm đối tượng nhỏ/chồng lấn ở xa theo ngưỡng <20px,R-06,v1.1,036,Đồng bộ vùng ignore_region trên img_011.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C088,img_011.jpg,"Xác nhận đối tượng person thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_011.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C089,img_011.jpg,"Xác nhận đối tượng car thật >=20px do 036 gán, bổ sung vào bản chung",R-01,v1.1,036,Giữ box car hợp lệ trên img_011.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C090,img_011.jpg,"Xác nhận đối tượng person thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_011.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C091,img_011.jpg,"Xác nhận đối tượng person thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_011.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C092,img_011.jpg,Chốt biên box person ôm sát toàn bộ phần nhìn thấy (IoU cũ=0.65),R-01,v1.1,036,Chuẩn hóa tọa độ box person trên img_011.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C093,img_011.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box van trên img_011.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C094,img_012.jpg,Chốt lớp truck cho xe bán tải/xe tải có thùng hàng tách biệt cabin,R-01,v1.1,036,Đổi lớp thống nhất thành truck trên img_012.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C095,img_012.jpg,Thống nhất thuộc tính (truncated: 002=no vs 036=yes) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box car trên img_012.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C096,img_012.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box truck trên img_012.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C097,img_013.jpg,Giữ vùng ignore_region bao cụm đối tượng nhỏ/chồng lấn ở xa theo ngưỡng <20px,R-06,v1.1,036,Đồng bộ vùng ignore_region trên img_013.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C098,img_015.jpg,Chốt biên box car ôm sát toàn bộ phần nhìn thấy (IoU cũ=0.60),R-01,v1.1,036,Chuẩn hóa tọa độ box car trên img_015.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C099,img_015.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box car trên img_015.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C100,img_016.jpg,Chốt biên box person ôm sát toàn bộ phần nhìn thấy (IoU cũ=0.70),R-01,v1.1,036,Chuẩn hóa tọa độ box person trên img_016.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C101,img_016.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_016.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C102,img_016.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box car trên img_016.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C103,img_016.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_016.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C104,img_016.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_016.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C105,img_016.jpg,Thống nhất thuộc tính (truncated: 002=yes vs 036=no) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box van trên img_016.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C106,img_018.jpg,Chốt lớp truck cho xe bán tải/xe tải có thùng hàng tách biệt cabin,R-01,v1.1,036,Đổi lớp thống nhất thành truck trên img_018.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C107,img_018.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box car trên img_018.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C108,img_018.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box car trên img_018.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C109,img_018.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box car trên img_018.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C110,img_022.jpg,"Xác nhận đối tượng person thật >=20px do 002 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_022.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C111,img_022.jpg,Chốt biên box motorcycle ôm sát toàn bộ phần nhìn thấy (IoU cũ=0.53),R-09,v1.1,036,Chuẩn hóa tọa độ box motorcycle trên img_022.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C112,img_023.jpg,"Xác nhận đối tượng person thật >=20px do 002 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_023.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C113,img_023.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box motorcycle trên img_023.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C114,img_023.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box motorcycle trên img_023.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C115,img_023.jpg,Thống nhất thuộc tính (truncated: 002=no vs 036=yes) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box motorcycle trên img_023.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C116,img_023.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box motorcycle trên img_023.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C117,img_024.jpg,"Xác nhận đối tượng car thật >=20px do 002 gán, bổ sung vào bản chung",R-01,v1.1,036,Giữ box car hợp lệ trên img_024.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C118,img_024.jpg,Chốt lớp car cho xe AMC Pacer wagon chở người (không phải van),R-01,v1.1,036,Đổi lớp thống nhất thành car trên img_024.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C119,img_024.jpg,Chốt lớp car cho xe AMC Pacer wagon chở người (không phải van),R-01,v1.1,036,Đổi lớp thống nhất thành car trên img_024.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C120,img_024.jpg,Chốt lớp car cho xe AMC Pacer wagon chở người (không phải van),R-01,v1.1,036,Đổi lớp thống nhất thành car trên img_024.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C121,img_024.jpg,Thống nhất thuộc tính (truncated: 002=yes vs 036=no) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box car trên img_024.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C122,img_024.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box car trên img_024.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C123,img_025.jpg,Giữ vùng ignore_region bao cụm đối tượng nhỏ/chồng lấn ở xa theo ngưỡng <20px,R-06,v1.1,036,Đồng bộ vùng ignore_region trên img_025.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C124,img_025.jpg,Thống nhất lớp đối tượng giữa car và van theo Guideline v1.1,R-01,v1.1,036,Chuẩn hóa lớp đối tượng trên img_025.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C125,img_025.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_025.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C126,img_025.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_025.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C127,img_025.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_025.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C128,img_025.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box car trên img_025.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C129,img_025.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box car trên img_025.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C130,img_026.jpg,"Xác nhận đối tượng person thật >=20px do 002 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_026.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C131,img_028.jpg,Chốt lớp truck cho xe bán tải/xe tải có thùng hàng tách biệt cabin,R-01,v1.1,036,Đổi lớp thống nhất thành truck trên img_028.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C132,img_030.jpg,"Xác nhận đối tượng motorcycle thật >=20px do 002 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box motorcycle hợp lệ trên img_030.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C133,img_030.jpg,"Xác nhận đối tượng motorcycle thật >=20px do 002 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box motorcycle hợp lệ trên img_030.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C134,img_030.jpg,"Xác nhận đối tượng motorcycle thật >=20px do 002 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box motorcycle hợp lệ trên img_030.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C135,img_030.jpg,"Xác nhận đối tượng motorcycle thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box motorcycle hợp lệ trên img_030.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C136,img_030.jpg,"Xác nhận đối tượng person thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_030.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C137,img_030.jpg,"Xác nhận đối tượng person thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_030.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C138,img_030.jpg,"Xác nhận đối tượng motorcycle thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box motorcycle hợp lệ trên img_030.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C139,img_030.jpg,"Xác nhận đối tượng motorcycle thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box motorcycle hợp lệ trên img_030.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C140,img_030.jpg,"Xác nhận đối tượng motorcycle thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box motorcycle hợp lệ trên img_030.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C141,img_030.jpg,"Xác nhận đối tượng motorcycle thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box motorcycle hợp lệ trên img_030.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C142,img_030.jpg,Chốt biên box motorcycle ôm sát toàn bộ phần nhìn thấy (IoU cũ=0.78),R-01,v1.1,036,Chuẩn hóa tọa độ box motorcycle trên img_030.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C143,img_030.jpg,Chốt biên box motorcycle ôm sát toàn bộ phần nhìn thấy (IoU cũ=0.63),R-01,v1.1,036,Chuẩn hóa tọa độ box motorcycle trên img_030.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C144,img_030.jpg,Chốt biên box motorcycle ôm sát toàn bộ phần nhìn thấy (IoU cũ=0.56),R-01,v1.1,036,Chuẩn hóa tọa độ box motorcycle trên img_030.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C145,img_030.jpg,Chốt biên box motorcycle ôm sát toàn bộ phần nhìn thấy (IoU cũ=0.54),R-01,v1.1,036,Chuẩn hóa tọa độ box motorcycle trên img_030.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C146,img_030.jpg,Thống nhất thuộc tính (truncated: 002=yes vs 036=no) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box motorcycle trên img_030.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C147,img_031.jpg,"Xác nhận đối tượng truck thật >=20px do 036 gán, bổ sung vào bản chung",R-01,v1.1,036,Giữ box truck hợp lệ trên img_031.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C148,img_031.jpg,Chốt biên box motorcycle ôm sát toàn bộ phần nhìn thấy (IoU cũ=0.62),R-01,v1.1,036,Chuẩn hóa tọa độ box motorcycle trên img_031.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C149,img_031.jpg,Chốt biên box person ôm sát toàn bộ phần nhìn thấy (IoU cũ=0.56),R-01,v1.1,036,Chuẩn hóa tọa độ box person trên img_031.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C150,img_032.jpg,"Xác nhận đối tượng car thật >=20px do 002 gán, bổ sung vào bản chung",R-01,v1.1,036,Giữ box car hợp lệ trên img_032.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C151,img_032.jpg,"Xác nhận đối tượng car thật >=20px do 036 gán, bổ sung vào bản chung",R-01,v1.1,036,Giữ box car hợp lệ trên img_032.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C152,img_032.jpg,"Xác nhận đối tượng car thật >=20px do 036 gán, bổ sung vào bản chung",R-01,v1.1,036,Giữ box car hợp lệ trên img_032.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C153,img_032.jpg,"Xác nhận đối tượng car thật >=20px do 036 gán, bổ sung vào bản chung",R-01,v1.1,036,Giữ box car hợp lệ trên img_032.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C154,img_032.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box car trên img_032.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C155,img_032.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box car trên img_032.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C156,img_032.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box car trên img_032.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C157,img_034.jpg,"Xác nhận đối tượng car thật >=20px do 036 gán, bổ sung vào bản chung",R-01,v1.1,036,Giữ box car hợp lệ trên img_034.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C158,img_034.jpg,"Xác nhận đối tượng person thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_034.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C159,img_034.jpg,Thống nhất thuộc tính (occluded_level: 002=1 vs 036=0) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box motorcycle trên img_034.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C160,img_035.jpg,"Xác nhận đối tượng person thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_035.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C161,img_035.jpg,Chốt lớp motorcycle cho xe 3 bánh auto-rickshaw theo quy tắc R-10,R-10,v1.1,036,Đổi lớp thống nhất thành motorcycle trên img_035.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C162,img_035.jpg,Chốt lớp motorcycle cho xe 3 bánh auto-rickshaw theo quy tắc R-10,R-10,v1.1,036,Đổi lớp thống nhất thành motorcycle trên img_035.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C163,img_036.jpg,"Xác nhận đối tượng person thật >=20px do 036 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_036.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C164,img_036.jpg,"Xác nhận đối tượng car thật >=20px do 036 gán, bổ sung vào bản chung",R-01,v1.1,036,Giữ box car hợp lệ trên img_036.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C165,img_036.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box car trên img_036.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C166,img_039.jpg,"Xác nhận đối tượng person thật >=20px do 002 gán, bổ sung vào bản chung",R-02,v1.1,036,Giữ box person hợp lệ trên img_039.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C167,img_039.jpg,Chốt biên box motorcycle ôm sát toàn bộ phần nhìn thấy (IoU cũ=0.67),R-01,v1.1,036,Chuẩn hóa tọa độ box motorcycle trên img_039.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C168,img_039.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box car trên img_039.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C169,img_039.jpg,Thống nhất thuộc tính (occluded_level: 002=0 vs 036=1) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box motorcycle trên img_039.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C170,img_040.jpg,"Xác nhận đối tượng truck thật >=20px do 002 gán, bổ sung vào bản chung",R-01,v1.1,036,Giữ box truck hợp lệ trên img_040.jpg,002 đã kiểm lại và xác nhận đạt,anh
+C171,img_040.jpg,Thống nhất thuộc tính (truncated: 002=no vs 036=yes) theo ngưỡng 50% diện tích và cắt mép ảnh,R-01,v1.1,036,Đồng bộ thuộc tính box person trên img_040.jpg,002 đã kiểm lại và xác nhận đạt,anh

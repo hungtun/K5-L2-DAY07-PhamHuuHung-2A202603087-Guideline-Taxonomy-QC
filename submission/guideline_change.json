@@ -1,0 +1,5 @@
+{
+  "kind": "editorial",
+  "summary": "Làm rõ câu chữ và ví dụ minh họa cho R-01 (biên box và mức che khuất 50%), R-02 (tách người đi xe máy ở vùng đông), R-06 (vùng ignore_region cho đối tượng < 20 px) sau khi rà soát 171 ca bất đồng; giữ nguyên định nghĩa lớp, thuộc tính và ngữ nghĩa của v1.0."
+}
+
