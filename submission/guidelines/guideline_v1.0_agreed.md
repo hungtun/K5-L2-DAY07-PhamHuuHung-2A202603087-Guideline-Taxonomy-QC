@@ -38,11 +38,11 @@ Bộ nhãn Bounding Box 2D này phục vụ huấn luyện mô hình **phát hi�
 
 Mọi box thuộc 5 lớp đối tượng (`car`, `truck`, `van`, `motorcycle`, `person`) phải có đủ 3 thuộc tính:
 
-| Thuộc tính | Kiểu | Giá trị & Mặc định | Quy ước định lượng thống nhất của nhóm |
+| Thuộc tính | Kiểu | Giá trị & Mặc định | Quy ước định lượng thống nhất của nhóm (Đã rút gọn) |
 |---|---|---|---|
-| `occluded_level` | `select` | `"0"`, `"1"`, `"2"`, `"3"` (Mặc định: `"0"`) | Tỷ lệ diện tích đối tượng bị vật khác che khuất:<br/>- **`0` (Thấy rõ):** Bị che **`< 5%`** diện tích.<br/>- **`1` (Che ít):** Bị che từ **`5%` đến `< 35%`** diện tích (ví dụ: người lái xe máy thấy rõ đầu, thân và phần lớn chân; xe bị che một góc nhỏ).<br/>- **`2` (Che nhiều):** Bị che từ **`35%` đến `70%`** diện tích (ví dụ: người ngồi sau xe máy bị người trước che nửa thân; người ngồi trên xích lô/tuk-tuk chỉ thấy nửa trên; xe trên giàn `img_002.jpg`).<br/>- **`3` (Che rất nặng):** Bị che **`> 70%` đến `85%`** diện tích (ví dụ: người lái xe bị kiện hàng che gần kín ở `img_029.jpg`). Nếu bị che **`> 85%`** không còn nhận diện được hình thái thì **không gán box**. |
-| `truncated` | `select` | `"no"`, `"yes"` (Mặc định: `"no"`) | Đánh giá đối tượng bị cắt bởi 4 cạnh biên của ảnh:<br/>- **`no`:** Nằm trọn trong ảnh (hoặc bị cắt ở mép `< 5%` diện tích không đáng kể).<br/>- **`yes`:** Bị rìa ảnh cắt mất **`>= 5%`** diện tích ước tính của đối tượng (ví dụ: xe/người ở sát cạnh dưới `img_005.jpg`, cạnh bên `img_014.jpg`, `img_034.jpg`). |
-| `can_review` | `checkbox` | `false`, `true` (Mặc định: `false`) | Tick `true` khi annotator gặp ca khó về biên box hoặc phân lớp cần kiểm tra lại ở Pha 4–5. |
+| `occluded_level` | `select` | `"0"`, `"1"` *(Mặc định: `"0"`, không dùng `"2"`, `"3"`)* | Đánh giá nhanh theo mốc **1/2 (`50%`) diện tích đối tượng**:<br/>- **`0` (Thấy rõ / Che nhẹ `< 50%` — GIỮ MẶC ĐỊNH):** Nhìn thấy từ một nửa đối tượng trở lên (bao gồm cả người lái xe máy thông thường). Vẽ box xong giữ nguyên mặc định `0`.<br/>- **`1` (Bị che nhiều `>= 50%`):** Bị vật khác che mất từ một nửa diện tích trở lên (ví dụ: người ngồi sau xe máy bị che khuất phần lớn, người ngồi trong tuk-tuk chỉ lộ đầu-vai, xe bị xe khác che một nửa).<br/>*(Lưu ý: Nếu bị che quá nặng `> 85%` không nhận diện được thì không vẽ box).* |
+| `truncated` | `select` | `"no"`, `"yes"` (Mặc định: `"no"`) | Đánh giá đối tượng bị cắt bởi 4 cạnh biên của ảnh:<br/>- **`no` (GIỮ MẶC ĐỊNH):** Nằm trọn trong ảnh.<br/>- **`yes`:** Bị mép ảnh cắt mất một phần rõ rệt (`>= 10%` diện tích, ví dụ xe/người ở sát cạnh dưới `img_005.jpg`, cạnh bên `img_014.jpg`). |
+| `can_review` | `checkbox` | `false`, `true` (Mặc định: `false`) | Giữ mặc định `false`; chỉ tick `true` khi thực sự không chắc chắn. |
 
 ---
 
@@ -50,7 +50,7 @@ Mọi box thuộc 5 lớp đối tượng (`car`, `truck`, `van`, `motorcycle`, 
 
 - **`R-01` (Biên box ôm sát phần nhìn thấy — Visible Tight Box):**
   - Chỉ vẽ box ôm sát các pixel thực sự nhìn thấy của đối tượng (sai số biên $\le 2\text{ px}$). Không vẽ đón (amodal) phần khuất sau vật khác hay ngoài rìa ảnh.
-  - Nếu một đối tượng bị cột điện/thanh chắn chia làm 2 phần nhìn thấy nhưng vẫn nhận diện rõ là 1 vật thể duy nhất (ví dụ các ô tô trên xe lồng `img_002.jpg`), vẽ **1 box duy nhất** bao trọn từ cực trái sang cực phải phần nhìn thấy của đối tượng đó và gán `occluded_level = 1` hoặc `2`.
+  - Nếu một đối tượng bị cột điện/thanh chắn chia làm 2 phần nhìn thấy nhưng vẫn nhận diện rõ là 1 vật thể duy nhất (ví dụ các ô tô trên xe lồng `img_002.jpg`), vẽ **1 box duy nhất** bao trọn từ cực trái sang cực phải phần nhìn thấy của đối tượng đó và gán `occluded_level = 0` (nếu che `< 50%`) hoặc `1` (nếu che `>= 50%`).
 - **`R-02` (Tách riêng Người và Xe máy / Phương tiện hở):**
   - Luôn vẽ **box riêng** cho `person` và **box riêng** cho `motorcycle` (tuyệt đối không gộp người + xe máy vào chung 1 box).
   - Nếu 1 xe máy có 2 người ngồi (`img_026.jpg`), vẽ 1 box `motorcycle` + 2 box `person` riêng biệt.
@@ -72,13 +72,13 @@ Mọi box thuộc 5 lớp đối tượng (`car`, `truck`, `van`, `motorcycle`, 
   - Xe đạp (`img_003.jpg`), xích lô đạp chân (`img_006.jpg`, `img_009.jpg`, `img_023.jpg`, `img_034.jpg`, `img_039.jpg`) và xe buýt công cộng cỡ lớn (`img_032.jpg`) nằm ngoài 5 lớp của taxonomy $\rightarrow$ **Không gán box cho bản thân phương tiện đó** (và không gán `ignore_region`), nhưng **vẫn gán lớp `person`** cho người đạp xe, khách ngồi trên xích lô hoặc hành khách đứng chờ xe buýt.
 - **`R-08` (Quy tắc Xe chở xe — Car Carrier `img_002.jpg`):**
   - Vẽ **1 box `truck`** bao trọn đầu kéo và khung rơ-moóc của xe tải chở xe (không kéo đỉnh box `truck` lên bao trùm nóc hàng xe con ở tầng 2 mà chỉ ôm theo kết cấu khung rơ-moóc và đầu kéo).
-  - Vẽ **riêng từng box `car`** cho mỗi chiếc ô tô con nằm trên 2 tầng của rơ-moóc (8 box `car` với `occluded_level = 1` hoặc `2`).
+  - Vẽ **riêng từng box `car`** cho mỗi chiếc ô tô con nằm trên 2 tầng của rơ-moóc (8 box `car`).
   - Vẽ **1 box `person`** cho người đứng cạnh đuôi rơ-moóc bên phải.
 - **`R-09` (Quy tắc hàng hóa gắn trên xe máy `img_029.jpg` và Sidecar `img_022.jpg`):**
   - Với xe máy có thùng thuyền sidecar gắn liền (`img_022.jpg`): vẽ **1 box `motorcycle`** bao trọn cả thân xe máy và phần sidecar.
   - Với xe máy chở kiện hàng rời quá khổ (`img_029.jpg`): Box `motorcycle` **chỉ ôm phần kết cấu xe máy nhìn thấy** (bánh xe, lốc máy, chắn bùn), **không** kéo rộng box để bao toàn bộ kiện hàng/bao tải cồng kềnh chất phía trên.
 - **`R-10` (Quy tắc cho Xe 3 bánh có động cơ Tuk-tuk / Auto-rickshaw `img_004.jpg`, `img_035.jpg`):**
-  - Thống nhất gán các xe tuk-tuk / auto-rickshaw 3 bánh gắn động cơ vào lớp **`motorcycle`** (vì dùng động cơ và cơ cấu lái ghi-đông mô tô, tương tự mô tô 3 bánh), đồng thời gán **`person`** (`occluded_level = 2` hoặc `3`) cho tài xế và hành khách nhìn thấy rõ.
+  - Thống nhất gán các xe tuk-tuk / auto-rickshaw 3 bánh gắn động cơ vào lớp **`motorcycle`** (vì dùng động cơ và cơ cấu lái ghi-đông mô tô, tương tự mô tô 3 bánh), đồng thời gán **`person`** (`occluded_level = 1`) cho tài xế và hành khách nhìn thấy rõ.
 
 ---
 
@@ -88,7 +88,7 @@ Trong buổi họp Pha 2, hai thành viên `036` và `002` đã đối chiếu h
 
 | STT | Vấn đề / Ca ảnh | Đề xuất ban đầu của `036` | Đề xuất ban đầu của `002` | Quyết định thống nhất (`v1.0`) & Lý do |
 |---|---|---|---|---|
-| 1 | **Ngưỡng % của `occluded_level`** | `0`: `<5%`<br/>`1`: `5–35%`<br/>`2`: `35–75%`<br/>`3`: `>75%` | `0`: `<5%`<br/>`1`: `5–25%`<br/>`2`: `25–60%`<br/>`3`: `>60%` | **Chốt (`R-01`):** `0` (`<5%`), `1` (`5%` đến `<35%`), `2` (`35%` đến `70%`), `3` (`>70%` đến `85%`; trên `85%` không gán).<br/>*Lý do:* Mốc `1/3` (`~35%`) và `2/3` (`~70%`) diện tích cơ thể/thân xe dễ ước lượng trực quan bằng mắt nhất khi gán trên CVAT, giúp giảm lệch thuộc tính giữa 2 người. |
+| 1 | **Ngưỡng % của `occluded_level`** | `0`: `<5%`<br/>`1`: `5–35%`<br/>`2`: `35–75%`<br/>`3`: `>75%` | `0`: `<5%`<br/>`1`: `5–25%`<br/>`2`: `25–60%`<br/>`3`: `>60%` | **Chốt (`R-01` — Rút gọn thành 2 mức dùng thực tế):**<br/>- **`0` (`< 50%` — Mặc định):** Thấy rõ từ một nửa vật trở lên.<br/>- **`1` (`>= 50%`):** Bị che từ một nửa vật trở lên (không dùng mức `2`, `3`).<br/>*Lý do:* Chia 4 mức gây nhiễu chủ quan rất lớn khi gán bằng mắt; rút gọn về mốc `50%` (1/2 vật) giúp giữ mặc định `0` cho đa số box, tăng tốc độ gán và đạt đồng thuận thuộc tính cao nhất. |
 | 2 | **Phân lớp xe Tuk-tuk / Auto-rickshaw (`img_004.jpg`, `img_035.jpg`)** | Đề xuất loại khỏi `motorcycle` (coi là ngoài taxonomy) hoặc hỏi Reviewer. | Đề xuất gán vào `motorcycle` vì là phương tiện cơ giới 3 bánh lái bằng ghi-đông. | **Chốt (`R-10`):** Gán vào **`motorcycle`**.<br/>*Lý do:* Tuk-tuk là phương tiện cơ giới phổ biến trên đường phố châu Á trong tập dữ liệu; xếp chung với mô tô 3 bánh (`img_022.jpg`) vào `motorcycle` giúp mô hình không bỏ sót phương tiện cơ giới đang lưu thông trên làn đường. |
 | 3 | **Xe bán tải lắp nắp thùng kín (`img_037.jpg`)** | Gán là `truck` (theo khung gầm xe bán tải có khoang thùng tách rời cabin). | Phân vân gán là `van` vì có nắp chụp kín phía sau nhìn giống xe van. | **Chốt (Mục 2.1):** Gán là **`truck`**.<br/>*Lý do:* Xe trong `img_037.jpg` là dòng pickup (GO Transit pickup) lắp phụ kiện nắp chụp (Truck Cap), vẫn có khe tách biệt giữa cabin và thùng hàng; gán `truck` giúp nhất quán 100% với mọi xe pickup khác (`img_001`, `img_012`, `img_028`). |
 | 4 | **Biên box `motorcycle` khi chở hàng quá khổ (`img_029.jpg`)** | Box `motorcycle` bao gồm cả xe lẫn khối hàng hóa cồng kềnh chất trên xe. | Box `motorcycle` chỉ ôm phần thân xe/bánh xe nhìn thấy, không bao kiện hàng rời. | **Chốt (`R-09`):** Chỉ ôm **phần thân/bánh xe máy nhìn thấy**, không bao kiện hàng rời chất chồng lên trên.<br/>*Lý do:* Kiện hàng có hình thù ngẫu nhiên và to gấp nhiều lần chiếc xe; chỉ ôm phần xe thật giúp box chặt hơn, tránh làm nhiễu đặc trưng hình học của lớp `motorcycle`. |
@@ -100,17 +100,17 @@ Trong buổi họp Pha 2, hai thành viên `036` và `002` đã đối chiếu h
 
 | Ảnh | Quy tắc áp dụng | Hướng dẫn thống nhất khi gán độc lập |
 |---|---|---|
-| `img_002.jpg` | `R-08` | 1 box `truck` (đầu kéo + khung rơ-moóc), 8 box `car` trên giàn (`occluded_level=1,2`), 1 box `person` đứng ở đuôi xe bên phải. |
+| `img_002.jpg` | `R-08` | 1 box `truck` (đầu kéo + khung rơ-moóc), 8 box `car` trên giàn, 1 box `person` đứng ở đuôi xe bên phải. |
 | `img_003.jpg` | `R-07` | Không gán xe đạp thồ bán mít; chỉ gán `person` cho người bán/người đi đường thật $\ge 20\text{ px}$. |
-| `img_004.jpg`, `img_035.jpg` | `R-10`, `R-03` | Gán `motorcycle` cho từng chiếc tuk-tuk / auto-rickshaw; gán `person` cho tài xế và hành khách nhìn rõ. |
+| `img_004.jpg`, `img_035.jpg` | `R-10`, `R-03` | Gán `motorcycle` cho từng chiếc tuk-tuk / auto-rickshaw; gán `person` (`occluded_level=1`) cho tài xế và hành khách nhìn rõ. |
 | `img_006.jpg`, `img_009.jpg`, `img_023.jpg`, `img_034.jpg`, `img_039.jpg` | `R-07`, `R-02` | Không gán chiếc xích lô; gán `person` cho người đạp xích lô và khách ngồi trên xích lô; gán bình thường các xe `motorcycle`, `car`, `van` xung quanh. |
 | `img_011.jpg` | `R-04` | Gán `motorcycle` cho dãy mô tô trưng bày; **không gán** mô hình Predator. |
 | `img_017.jpg`, `img_020.jpg`, `img_027.jpg`, `img_033.jpg`, `img_038.jpg` | `R-04`, `R-05` | **Không gán** tượng đồng (`img_017`), gương xe chủ & ảnh phản chiếu (`img_020`), tượng đá bán tải (`img_027`), ma-nơ-canh (`img_033`), xe đồ chơi/búp bê (`img_038`). Nếu cả ảnh không có đối tượng thật nào đạt chuẩn thì giữ ảnh trong COCO với 0 annotation. |
 | `img_018.jpg` | `R-04`, `R-06` | Không gán hình người trên biển quảng cáo bầu cử; chỉ gán phương tiện thật dưới đường (hoặc `ignore_region` nếu `< 20 px`). |
-| `img_019.jpg` | `R-03`, `R-04`, `R-06` | Gán 1 box `car` cho xe vàng Dangermouse; 1 box `person` (`occluded_level=2`) cho người lái thật; bỏ qua chuột trắng giả; dùng `ignore_region` cho đám đông khán giả hai bên rào chắn. |
+| `img_019.jpg` | `R-03`, `R-04`, `R-06` | Gán 1 box `car` cho xe vàng Dangermouse; 1 box `person` (`occluded_level=1`) cho người lái thật; bỏ qua chuột trắng giả; dùng `ignore_region` cho đám đông khán giả hai bên rào chắn. |
 | `img_022.jpg` | `R-09`, `R-02` | 1 box `motorcycle` bao cả xe và thùng sidecar; 2 box `person` cho 2 người ngồi trên xe. |
 | `img_028.jpg` | `R-04` | Gán 1 box `truck` cho thân xe bán tải thật (không kéo box bao lên phần tượng con ngựa gắn trên thùng); không gán tượng ngựa. |
-| `img_029.jpg` | `R-09` | 1 box `motorcycle` chỉ ôm phần thân/bánh xe máy lộ ra dưới kiện hàng (`occluded_level=2`); 1 box `person` cho người lái (`occluded_level=2` hoặc `3`). |
+| `img_029.jpg` | `R-09` | 1 box `motorcycle` chỉ ôm phần thân/bánh xe máy lộ ra dưới kiện hàng (`occluded_level=1`); 1 box `person` cho người lái (`occluded_level=1`). |
 | `img_032.jpg` | `R-07` | Không gán xe buýt công cộng cỡ lớn; chỉ gán `person` cho người đứng ở trạm chờ và `car`/`truck`/`van` thật nếu có. |
 | `img_036.jpg`, `img_037.jpg` | Mục 2.1 | Gán cả xe tải nhỏ CMC Veryca (`img_036.jpg`) và xe bán tải lắp nắp thùng kín (`img_037.jpg`) vào lớp `truck`. |
 
